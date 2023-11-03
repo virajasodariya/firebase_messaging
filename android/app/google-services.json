@@ -1,73 +1,45 @@
 {
   "project_info": {
-    "project_number": "134064593405",
-    "project_id": "authentication-firebase-434e5",
-    "storage_bucket": "authentication-firebase-434e5.appspot.com"
+    "project_number": "1034158875528",
+    "project_id": "crud-operation-cloud-firestore",
+    "storage_bucket": "crud-operation-cloud-firestore.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:134064593405:android:481c733e3ca55e0551e194",
+        "mobilesdk_app_id": "1:1034158875528:android:c27a3bf99329f9bf58d03d",
         "android_client_info": {
-          "package_name": "com.example.authentication_firebase"
+          "package_name": "com.example.crud_operation_cloud_firestore"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "134064593405-teodid0esh7d9r4loha2jt1v9ife4o28.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.authentication_firebase",
-            "certificate_hash": "df875a8375900bb69ffe467e06228abaf8eef00a"
-          }
-        },
-        {
-          "client_id": "134064593405-pmml7o1ti6c6b3mru6cbom02icd414gn.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBo2eUQKCk_W7veG1nZG7p8OuMoAbfBDZQ"
+          "current_key": "AIzaSyAwMkM3MTSusXT_UVqYyTb1bo_2ianfDWY"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "134064593405-3ddg2m61bn0ij2qv8i0n0fgj9vlul41d.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:134064593405:android:35f7f4302c4ed70151e194",
+        "mobilesdk_app_id": "1:1034158875528:android:e81bc7652e05c6bb58d03d",
         "android_client_info": {
           "package_name": "com.example.firebase_messaging"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "134064593405-pmml7o1ti6c6b3mru6cbom02icd414gn.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBo2eUQKCk_W7veG1nZG7p8OuMoAbfBDZQ"
+          "current_key": "AIzaSyAwMkM3MTSusXT_UVqYyTb1bo_2ianfDWY"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "134064593405-3ddg2m61bn0ij2qv8i0n0fgj9vlul41d.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

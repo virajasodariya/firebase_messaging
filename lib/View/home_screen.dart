@@ -1,4 +1,4 @@
-import 'package:firebase_messaging_flutter/Utils/notification_services.dart';
+import 'package:firebase_messaging_flutter/Utils/local_notification_service.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,8 +16,8 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            NotificationServiceLocal().showNotification(
-              title: "title",
+            LocalNotificationService().showNotification(
+              title: "Flutter Local Notification",
               body: "its working",
             );
           },
