@@ -24,6 +24,16 @@ class LocalNotificationService {
             (NotificationResponse notificationResponse) async {});
   }
 
+  Future showNotification(
+      {int id = 0, String? title, String? body, String? playLoad}) async {
+    localNotificationsPlugin.show(
+      id,
+      title,
+      body,
+      await notificationDetails(),
+    );
+  }
+
   notificationDetails() {
     return const NotificationDetails(
       android: AndroidNotificationDetails(
@@ -34,10 +44,5 @@ class LocalNotificationService {
       ),
       iOS: DarwinNotificationDetails(),
     );
-  }
-
-  Future showNotification(
-      {int id = 0, String? title, String? body, String? playLoad}) async {
-    localNotificationsPlugin.show(id, title, body, await notificationDetails());
   }
 }
