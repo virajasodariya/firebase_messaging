@@ -15,8 +15,8 @@ class FirebaseNotificationServices {
 
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       LocalNotificationService().showNotification(
-        title: message.notification?.title,
-        body: message.notification?.body,
+        title: message.notification!.title,
+        body: message.notification!.body,
       );
     });
 
