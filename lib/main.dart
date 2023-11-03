@@ -4,6 +4,7 @@ import 'package:firebase_messaging_flutter/Utils/local_notification_service.dart
 import 'package:firebase_messaging_flutter/View/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 import 'firebase_options.dart';
 
 void main() async {
