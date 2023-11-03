@@ -10,11 +10,9 @@ class FirebaseNotificationServices {
   Future<void> initNotifications() async {
     await firebaseMessaging.requestPermission();
 
-    // Fetching the FCM Token:
     String? token = await firebaseMessaging.getToken();
     log('Token: $token');
 
-    // Listening for Foreground Messages:
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       LocalNotificationService().showNotification(
         title: message.notification?.title,
@@ -22,12 +20,10 @@ class FirebaseNotificationServices {
       );
     });
 
-    // Handling Notifications When App is Opened from a Background State:
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
       handleNotification(message);
     });
 
-    // Handling Notifications When App is Launched from a Terminated State:
     RemoteMessage? initialMessage =
         await FirebaseMessaging.instance.getInitialMessage();
     if (initialMessage != null) {
@@ -35,7 +31,6 @@ class FirebaseNotificationServices {
     }
   }
 
-  // Method to Handle Navigation:
   void handleNotification(RemoteMessage? message) {
     if (message != null) {
       Get.to(() => NotificationScreen(message: message));
